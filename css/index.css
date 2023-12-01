@@ -1,0 +1,249 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+:root {
+  --black: #121212;
+  --dark-grey: #1d1d1d;
+  --linear: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  --brown: #bea69e;
+  --white: #fff;
+}
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+.header-hero {
+  position: relative;
+  width: auto;
+}
+
+.graphic {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+  position: sticky;
+  height: 905px;
+}
+.graphic > div {
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  opacity: 0.2;
+}
+@media screen and (max-width: 768px) {
+  .graphic > div {
+    width: 24.4%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .graphic > div {
+    width: 16.4%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .graphic > div {
+    width: 16.5%;
+  }
+}
+/* nav */
+.nav {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  top: 20px;
+  left: 20px;
+}
+nav {
+  width: 335px;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--black, #121212);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: var(--white);
+  font-family: DM Sans;
+  font-size: 21.8px;
+  margin: 12.5px 0 14px 20px;
+}
+.nav-block {
+  display: flex;
+  gap: 14px;
+  margin: 12.5px 20px 14px 0;
+}
+.nav-camera {
+  width: 16px;
+  height: 16px;
+  padding: 8px;
+  background-color: var(--dark-grey);
+  border-radius: 50%;
+}
+.nav-menu {
+  width: 32px;
+  height: 32px;
+  background-color: var(--black);
+  border: 0;
+}
+.nav-menu-svg {
+  width: 32px;
+  height: 32px;
+}
+.sign-up {
+}
+@media screen and (max-width: 768px) {
+  .sign-up {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1280px) {
+}
+/* hero */
+.hero {
+  position: absolute;
+  z-index: 2;
+  width: 335px;
+  border-radius: 30px;
+  top: 91.6px;
+  left: 20px;
+  background-color: #1d1d1d;
+}
+.hero-title {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -1.6px;
+  margin: 40px 20px 20px 20px;
+}
+.hero-title-span {
+  color: #bea69e;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+}
+.hero-text {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: DM Sans;
+  line-height: 1.28;
+  letter-spacing: -0.28px;
+  margin: 0 20px 40px 20px;
+}
+.hero-block {
+  display: flex;
+  margin: 0 20px 31px 20px;
+}
+
+.hero-block-users {
+  margin-right: 40px;
+}
+.hero-block-users-list {
+  position: relative;
+  display: flex;
+  height: 44px;
+  width: 100px;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hero-block-users-list-item {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+.item-photo {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.hero-block-users-list-item:nth-child(1) {
+  z-index: 3;
+}
+.hero-block-users-list-item:nth-child(2) {
+  z-index: 2;
+  left: 28px;
+}
+
+.hero-block-users-list-item:nth-child(3) {
+  z-index: 1;
+  left: 57px;
+}
+.hero-block-users-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4px;
+}
+.hero-block-users-text {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.56px;
+  width: 67px;
+}
+.hero-block-users-svg {
+  width: 18px;
+  height: 9px;
+}
+.hero-block-rewiews {
+  display: flex;
+}
+.hero-block-rewiews-star {
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  background-color: var(--brown);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+/* .hero-block-rewiews-text {
+} */
+.hero-block-rewiews-p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.56px;
+  margin-bottom: 4px;
+}
+.hero-block-rewiews-cout {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 112.5% */
+  letter-spacing: -0.64px;
+}
+.hero-block-rewiews-cout::before {
+  content: "+";
+}
+.man-pic {
+  margin: 0 auto;
+  display: block;
+}
