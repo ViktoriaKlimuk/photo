@@ -281,6 +281,7 @@ nav {
 .block {
   padding: 20px 0;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
 }
 .block-text {
   color: #bea69e;
@@ -292,7 +293,6 @@ nav {
   letter-spacing: -0.56px;
   text-transform: uppercase;
   white-space: nowrap;
-  overflow: hidden;
   animation: runText 15s linear infinite;
 }
 
